@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="eggs2throwModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="movieProfile">
+          <Key>
+            <PropertyRef Name="movieId" />
+          </Key>
+          <Property Name="movieId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="category" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="upVote" Type="int" />
+          <Property Name="downVote" Type="int" />
+          <Property Name="movieLang" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="review" Type="varchar" MaxLength="3050" Nullable="false" />
+          <Property Name="director" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="movieCast" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="songs" Type="varchar" MaxLength="1050" Nullable="false" />
+          <Property Name="link" Type="varchar" MaxLength="350" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="eggs2throwModelStoreContainer">
+          <EntitySet Name="movieProfile" EntityType="Self.movieProfile" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="eggs2throwModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="movieProfile">
+          <Key>
+            <PropertyRef Name="movieId" />
+          </Key>
+          <Property Name="movieId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="upVote" Type="Int32" />
+          <Property Name="downVote" Type="Int32" />
+          <Property Name="movieLang" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="review" Type="String" MaxLength="3050" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="director" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="movieCast" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="songs" Type="String" MaxLength="1050" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="link" Type="String" MaxLength="350" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="eggs2throwEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="movieProfiles" EntityType="Self.movieProfile" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="eggs2throwModelStoreContainer" CdmEntityContainer="eggs2throwEntities">
+          <EntitySetMapping Name="movieProfiles">
+            <EntityTypeMapping TypeName="eggs2throwModel.movieProfile">
+              <MappingFragment StoreEntitySet="movieProfile">
+                <ScalarProperty Name="movieId" ColumnName="movieId" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="upVote" ColumnName="upVote" />
+                <ScalarProperty Name="downVote" ColumnName="downVote" />
+                <ScalarProperty Name="movieLang" ColumnName="movieLang" />
+                <ScalarProperty Name="review" ColumnName="review" />
+                <ScalarProperty Name="director" ColumnName="director" />
+                <ScalarProperty Name="movieCast" ColumnName="movieCast" />
+                <ScalarProperty Name="songs" ColumnName="songs" />
+                <ScalarProperty Name="link" ColumnName="link" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

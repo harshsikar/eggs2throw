@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eggs2throwModelStoreContainer" CdmEntityContainer="eggs2throwEntities">
+    <EntitySetMapping Name="movieProfiles">
+      <EntityTypeMapping TypeName="eggs2throwModel.movieProfile">
+        <MappingFragment StoreEntitySet="movieProfile">
+          <ScalarProperty Name="movieId" ColumnName="movieId" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="upVote" ColumnName="upVote" />
+          <ScalarProperty Name="downVote" ColumnName="downVote" />
+          <ScalarProperty Name="movieLang" ColumnName="movieLang" />
+          <ScalarProperty Name="review" ColumnName="review" />
+          <ScalarProperty Name="director" ColumnName="director" />
+          <ScalarProperty Name="movieCast" ColumnName="movieCast" />
+          <ScalarProperty Name="songs" ColumnName="songs" />
+          <ScalarProperty Name="link" ColumnName="link" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
