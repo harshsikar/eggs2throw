@@ -215,6 +215,9 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>movie.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="js\angular.min.js" />
+    <Content Include="js\controllers.js" />
+    <Content Include="js\models.js" />
     <Content Include="Models\movie.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>movie.edmx</DependentUpon>
@@ -264,6 +267,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="css\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

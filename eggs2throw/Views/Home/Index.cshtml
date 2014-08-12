@@ -2,4 +2,13 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h1>Index</h1>
+
+<div ng-app="eggs2throw">
+    <div ng-controller="movieView">
+       <div ng-repeat="movie in movies">
+            <h2>{{movie.title}}</h2>
+            <canvas id="canvas{{movie.id}}" class="meter"></canvas>
+        </div>
+    </div>
+</div>
