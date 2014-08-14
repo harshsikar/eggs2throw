@@ -1,22 +1,42 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-
-<h1>Index</h1>
+<header class="movie-header">
+    <img class="egg-pic" src="~/pics/egg.png" />
+    <h1>Eggs 2 Throw</h1>
+    
+</header>
 
 <div ng-app="eggs2throw">
     <div ng-controller="movieView">
-        <div ng-repeat="movie in movies">
-            <h2>{{movie.name}}</h2>
-            <p>{{movie.category}}</p>
-            <a href="{{movie.link}}">Preview Trailer</a>
-            <p>Director: {{movie.director}}</p>
-            <p>Cast: {{movie.movieCast}}</p>
-            <p>{{movie.movieLang}}</p>
-            <p>Songs: {{movie.songs}}</p>
-            <p>{{movie.picture}}</p>
-            <p>Up Votes: {{movie.upVotes}}</p>
-            <canvas id="canvas{{movie.movieId}}" class="meter"></canvas>
+        <div ng-repeat="movie in movies" class="backGroundMovieDiv">
+            <div class="movie-title">
+                <h2>{{movie.name}}</h2>
+            </div>
+            <img src="{{movie.picture}}" class="movie-image"/>
+            <div class="movie-details">
+                <p>Category: {{movie.category}}</p>
+                <a href="{{movie.link}}">Trailer</a>
+                
+                <p>Votes: {{movie.upVote - movie.downVote}}</p>
+                <canvas id="canvas{{movie.movieId}}" class="meter"></canvas>
+            </div>
+            <div class="bottom-movie-details">
+                <table>
+                    <tr>
+                        <th><p>Director</p></th>                   
+                        <th><p>Cast</p></th>
+                        <th><p>Language:</p></th>
+                        <th><p>Songs:</p></th>  
+                    </tr>
+                    <tr>  
+                        <td>{{movie.director}}</td>
+                        <td>{{movie.movieCast}}</td>
+                        <td>{{movie.movieLang}}</td>
+                        <td>{{movie.songs}}</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>

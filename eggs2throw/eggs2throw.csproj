@@ -156,12 +156,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\sql\movie-profile.sql" />
+    <Content Include="css\eggs.css" />
     <Content Include="Global.asax" />
     <Content Include="js\angular-resource.min.js" />
     <Content Include="js\angular.min.js" />
     <Content Include="js\controllers.js" />
     <Content Include="js\jquery-2.1.1.min.js" />
     <Content Include="js\models.js" />
+    <Content Include="pics\egg.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -174,9 +176,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="css\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

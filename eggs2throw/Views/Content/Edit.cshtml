@@ -7,26 +7,15 @@
 <h2>Edit</h2>
 
 @using (Html.BeginForm()) {
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
 
     <fieldset>
         <legend>movieProfile</legend>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.movieId)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.movieId)
-            @Html.ValidationMessageFor(model => model.movieId)
-        </div>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.picture)
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.picture)
-            @Html.ValidationMessageFor(model => model.picture)
         </div>
 
         <div class="editor-label">
@@ -34,7 +23,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.category)
-            @Html.ValidationMessageFor(model => model.category)
         </div>
 
         <div class="editor-label">
@@ -42,23 +30,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.name)
-            @Html.ValidationMessageFor(model => model.name)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.upVote)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.upVote)
-            @Html.ValidationMessageFor(model => model.upVote)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.downVote)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.downVote)
-            @Html.ValidationMessageFor(model => model.downVote)
         </div>
 
         <div class="editor-label">
@@ -66,7 +37,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.movieLang)
-            @Html.ValidationMessageFor(model => model.movieLang)
         </div>
 
         <div class="editor-label">
@@ -74,7 +44,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.review)
-            @Html.ValidationMessageFor(model => model.review)
         </div>
 
         <div class="editor-label">
@@ -82,7 +51,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.director)
-            @Html.ValidationMessageFor(model => model.director)
         </div>
 
         <div class="editor-label">
@@ -90,7 +58,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.movieCast)
-            @Html.ValidationMessageFor(model => model.movieCast)
         </div>
 
         <div class="editor-label">
@@ -98,7 +65,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.songs)
-            @Html.ValidationMessageFor(model => model.songs)
         </div>
 
         <div class="editor-label">
@@ -106,7 +72,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.link)
-            @Html.ValidationMessageFor(model => model.link)
         </div>
 
         <p>
@@ -118,7 +83,3 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}

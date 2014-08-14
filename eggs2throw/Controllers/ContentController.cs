@@ -47,16 +47,18 @@ namespace eggs2throw.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(movieProfile movieprofile)
+        public ActionResult Create(movieProfile movie)
         {
             if (ModelState.IsValid)
             {
-                db.movieProfiles.Add(movieprofile);
+                movie.upVote = 0;
+                movie.downVote = 0;
+                db.movieProfiles.Add(movie);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(movieprofile);
+            return View(movie);
         }
 
         //
