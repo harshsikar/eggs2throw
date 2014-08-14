@@ -6,37 +6,38 @@
     <h1>Eggs 2 Throw</h1>
     
 </header>
-
-<div ng-app="eggs2throw">
-    <div ng-controller="movieView">
-        <div ng-repeat="movie in movies" class="backGroundMovieDiv">
-            <div class="movie-title">
-                <h2>{{movie.name}}</h2>
-            </div>
-            <img src="{{movie.picture}}" class="movie-image"/>
-            <div class="movie-details">
-                <p>Category: {{movie.category}}</p>
-                <a href="{{movie.link}}">Trailer</a>
+<nav>
+    <div><p>Language</p></div>
+    <div><p>Highest Rated</p></div>
+</nav>
+<div>
+    <div ng-repeat="movie in movies" class="backGroundMovieDiv">
+        <div class="movie-title">
+            <h2>{{movie.name}}</h2>
+        </div>
+        <img src="{{movie.picture}}" class="movie-image"/>
+        <div class="movie-details">
+            <p>Category: {{movie.category}}</p>
+            <a href="{{movie.link}}">Trailer</a>
                 
-                <p>Votes: {{movie.upVote - movie.downVote}}</p>
-                <canvas id="canvas{{movie.movieId}}" class="meter"></canvas>
-            </div>
-            <div class="bottom-movie-details">
-                <table>
-                    <tr>
-                        <th><p>Director</p></th>                   
-                        <th><p>Cast</p></th>
-                        <th><p>Language:</p></th>
-                        <th><p>Songs:</p></th>  
-                    </tr>
-                    <tr>  
-                        <td>{{movie.director}}</td>
-                        <td>{{movie.movieCast}}</td>
-                        <td>{{movie.movieLang}}</td>
-                        <td>{{movie.songs}}</td>
-                    </tr>
-                </table>
-            </div>
+            <p>Votes: {{movie.upVote - movie.downVote}}</p>
+            <canvas id="canvas{{movie.movieId}}" class="meter"></canvas>
+        </div>
+        <div class="bottom-movie-details">
+            <table>
+                <tr>
+                    <th><p>Director</p></th>                   
+                    <th><p>Cast</p></th>
+                    <th><p>Language:</p></th>
+                    <th><p>Songs:</p></th>  
+                </tr>
+                <tr>  
+                    <td>{{movie.director}}</td>
+                    <td>{{movie.movieCast}}</td>
+                    <td>{{movie.movieLang}}</td>
+                    <td>{{movie.songs}}</td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
