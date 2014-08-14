@@ -4,13 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/js/angular.min.js"></script>
+    <script src="~/js/angular-resource.min.js"></script>
+    <script src="~/js/controllers.js"></script>
+    <script src="~/js/models.js"></script>
 </head>
 <body>
     @RenderBody()
-
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -30,3 +30,35 @@ c:\users\sriram\documents\visual studio 2013\Projects\eggs2throw\eggs2throw\bin\
 c:\users\sriram\documents\visual studio 2013\Projects\eggs2throw\eggs2throw\obj\Debug\eggs2throw.csprojResolveAssemblyReference.cache
 c:\users\sriram\documents\visual studio 2013\Projects\eggs2throw\eggs2throw\obj\Debug\eggs2throw.dll
 c:\users\sriram\documents\visual studio 2013\Projects\eggs2throw\eggs2throw\obj\Debug\eggs2throw.pdb
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\eggs2throw.dll.config
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\eggs2throw.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\eggs2throw.pdb
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\Antlr3.Runtime.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\EntityFramework.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\Newtonsoft.Json.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Net.Http.Formatting.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Http.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Http.WebHost.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Mvc.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Optimization.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Providers.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Razor.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.WebPages.Deployment.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.WebPages.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.WebPages.Razor.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\WebGrease.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\EntityFramework.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\Newtonsoft.Json.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Net.Http.Formatting.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Http.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Http.WebHost.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Mvc.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.Razor.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.WebPages.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.WebPages.Deployment.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\bin\System.Web.WebPages.Razor.xml
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\obj\Debug\eggs2throw.csprojResolveAssemblyReference.cache
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\obj\Debug\eggs2throw.dll
+C:\Users\James\Desktop\eggs2throw\eggs2throw\eggs2throw\obj\Debug\eggs2throw.pdb
