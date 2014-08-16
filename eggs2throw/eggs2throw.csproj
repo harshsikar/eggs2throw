@@ -163,7 +163,9 @@
     <Content Include="js\controllers.js" />
     <Content Include="js\jquery-2.1.1.min.js" />
     <Content Include="js\models.js" />
+    <Content Include="pics\broken-egg.png" />
     <Content Include="pics\egg.png" />
+    <Content Include="pics\golden-egg.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
