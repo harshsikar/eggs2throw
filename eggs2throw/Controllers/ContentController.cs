@@ -46,7 +46,7 @@ namespace eggs2throw.Controllers
         // POST: /Content/Create
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+       // [ValidateAntiForgeryToken]
         public ActionResult Create(movieProfile movie)
         {
             if (ModelState.IsValid)
@@ -78,12 +78,13 @@ namespace eggs2throw.Controllers
         // POST: /Content/Edit/5
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+      //  [ValidateAntiForgeryToken]
         public ActionResult Edit(movieProfile movieprofile)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(movieprofile).State = EntityState.Modified;
+                movieProfile movie = db.movieProfiles.Find(movieprofile.name);
+                db.Entry(movie).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -107,7 +108,7 @@ namespace eggs2throw.Controllers
         // POST: /Content/Delete/5
 
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
             movieProfile movieprofile = db.movieProfiles.Find(id);
