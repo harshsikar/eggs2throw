@@ -8,6 +8,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
     width: 95%;
+    height: 425px;
     border-bottom: 12px solid black;
     border-top: 3px dashed black;
     border-bottom-right-radius: 5%;
@@ -27,7 +28,7 @@
 }
 .bottom-movie-details table {
     position:absolute;
-    margin-left: 20%;
+    //margin-left: 20%;
     margin-top: -100px;
 }
 .bottom-movie-details table tr th{
@@ -80,4 +81,31 @@ nav div {
 }
 nav div p {
     padding-top: 10px;
+}
+.egg-meter {
+    width: 600px;
+    height: 150px;
+    background-color: rgb(185, 185, 149);
+    border-top-right-radius: 50%;
+    border-radius: 10%;
+    position: relative;
+    border: 2px solid rgb(12,15,13);
+    margin-top: -150px;
+    margin-left: -20%;
+}
+.egg-meter img {
+    position: absolute;
+    width: 100px;
+    margin-top: 25px;
+}
+.gold-egg {
+    margin-left: 500px;
+}
+.egg-meter canvas {
+    position: absolute;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 45px;
+    height: 65px;
+    background-color: rgb(80,80,70);
 }

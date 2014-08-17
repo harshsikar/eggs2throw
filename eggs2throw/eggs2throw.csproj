@@ -160,6 +160,7 @@
     <Content Include="Global.asax" />
     <Content Include="js\angular-resource.min.js" />
     <Content Include="js\angular.min.js" />
+    <Content Include="js\canvas.js" />
     <Content Include="js\controllers.js" />
     <Content Include="js\jquery-2.1.1.min.js" />
     <Content Include="js\models.js" />

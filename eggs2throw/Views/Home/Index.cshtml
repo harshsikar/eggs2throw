@@ -20,9 +20,14 @@
         <div class="movie-details">
             <p>Category: {{movie.category}}</p>
             <a href="{{movie.link}}">Trailer</a>
-                
+            <p>down votes <span id="down{{movie.movieId}}">{{movie.downVote}}</span></p>
+            <p>up votes <span id="up{{movie.movieId}}">{{movie.upVote}}</span></p>
             <p>Votes: {{movie.upVote - movie.downVote}}</p>
-            <canvas id="canvas{{movie.movieId}}" class="meter"></canvas>
+            <div class="egg-meter">
+                <img src="~/pics/broken-egg.png" />
+                <canvas id="canvas{{movie.movieId}}" class="meter"></canvas>
+                <img class="gold-egg" src="~/pics/golden-egg.png" />
+            </div>
         </div>
         <div class="bottom-movie-details">
             <table>
